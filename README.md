@@ -35,7 +35,7 @@ We implement a multilayer perceptron (MLP) character-level language model. In th
 
 ---
 
-**Lecture 4: Building makemore Part 3: Activations & Gradients, BatchNorm**
+**(DONE) Lecture 4: Building makemore Part 3: Activations & Gradients, BatchNorm**
 
 We dive into some of the internals of MLPs with multiple layers and scrutinize the statistics of the forward pass activations, backward pass gradients, and some of the pitfalls when they are improperly scaled. We also look at the typical diagnostic tools and visualizations you'd want to use to understand the health of your deep network. We learn why training deep neural nets can be fragile and introduce the first modern innovation that made doing so much easier: Batch Normalization. Residual connections and the Adam optimizer remain notable todos for later video.
 
@@ -45,7 +45,7 @@ We dive into some of the internals of MLPs with multiple layers and scrutinize t
 
 ---
 
-**Lecture 5: Building makemore Part 4: Becoming a Backprop Ninja**
+**(DONE) Lecture 5: Building makemore Part 4: Becoming a Backprop Ninja**
 
 We take the 2-layer MLP (with BatchNorm) from the previous video and backpropagate through it manually without using PyTorch autograd's loss.backward(). That is, we backprop through the cross entropy loss, 2nd linear layer, tanh, batchnorm, 1st linear layer, and the embedding table. Along the way, we get an intuitive understanding about how gradients flow backwards through the compute graph and on the level of efficient Tensors, not just individual scalars like in micrograd. This helps build competence and intuition around how neural nets are optimized and sets you up to more confidently innovate on and debug modern neural networks.
 
@@ -57,7 +57,7 @@ I recommend you work through the exercise yourself but work with it in tandem an
 
 ---
 
-**Lecture 6: Building makemore Part 5: Building WaveNet**
+**(DONE) Lecture 6: Building makemore Part 5: Building WaveNet**
 
 We take the 2-layer MLP from previous video and make it deeper with a tree-like structure, arriving at a convolutional neural network architecture similar to the WaveNet (2016) from DeepMind. In the WaveNet paper, the same hierarchical architecture is implemented more efficiently using causal dilated convolutions (not yet covered). Along the way we get a better sense of torch.nn and what it is and how it works under the hood, and what a typical deep learning development process looks like (a lot of reading of documentation, keeping track of multidimensional tensor shapes, moving between jupyter notebooks and repository code, ...).
 
