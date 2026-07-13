@@ -67,7 +67,7 @@ We take the 2-layer MLP from previous video and make it deeper with a tree-like 
 ---
 
 
-**Lecture 7: Let's build GPT: from scratch, in code, spelled out.**
+**(DONE) Lecture 7: Let's build GPT: from scratch, in code, spelled out.**
 
 We build a Generatively Pretrained Transformer (GPT), following the paper "Attention is All You Need" and OpenAI's GPT-2 / GPT-3. We talk about connections to ChatGPT, which has taken the world by storm. We watch GitHub Copilot, itself a GPT, help us write a GPT (meta :D!) . I recommend people watch the earlier makemore videos to get comfortable with the autoregressive language modeling framework and basics of tensors and PyTorch nn, which we take for granted in this video.
 
@@ -75,7 +75,7 @@ We build a Generatively Pretrained Transformer (GPT), following the paper "Atten
 
 ---
 
-**Lecture 8: Let's build the GPT Tokenizer**
+**(DONE) Lecture 8: Let's build the GPT Tokenizer**
 
 The Tokenizer is a necessary and pervasive component of Large Language Models (LLMs), where it translates between strings and tokens (text chunks). Tokenizers are a completely separate stage of the LLM pipeline: they have their own training sets, training algorithms (Byte Pair Encoding), and after training implement two fundamental functions: encode() from strings to tokens, and decode() back from tokens to strings. In this lecture we build from scratch the Tokenizer used in the GPT series from OpenAI. In the process, we will see that a lot of weird behaviors and problems of LLMs actually trace back to tokenization. We'll go through a number of these issues, discuss why tokenization is at fault, and why someone out there ideally finds a way to delete this stage entirely.
 
